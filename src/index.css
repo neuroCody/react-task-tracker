@@ -8,13 +8,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: url('./notebook.jpg');
+
 }
+
 
 .container {
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
+  background-color: #487e95;
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
@@ -55,7 +59,7 @@ body {
 }
 
 .task {
-  background: #f4f4f4;
+  background: #FFF;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;

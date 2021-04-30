@@ -9,7 +9,7 @@ function App() {
     {
         id: 1, 
         text: 'Doctors Appointment', 
-        day: 'Feb 5th an 2:30pm',
+        day: 'Feb 5th at 2:30pm',
         reminder: true,
     },
     {
@@ -44,12 +44,14 @@ const toggleReminder = (id) => {
   }
 
   return (
+    <>
+    <div className='background'></div>
     <div className='container'>
       <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask}/>}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No Tasks Available'}
     </div>
-
+    </>
   );
 }
 
